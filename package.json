@@ -1,0 +1,14 @@
+{
+  "name": "torounit-block-theme",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "wp-env": "wp-env"
+  },
+  "author": "",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@wordpress/env": "^4.8.0",
+    "@wordpress/scripts": "^23.2.0"
+  }
+}

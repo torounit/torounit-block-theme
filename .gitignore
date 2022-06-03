@@ -1,0 +1,7 @@
+# IntelliJ project files
+.idea
+*.iml
+out
+
+# Dependency directories
+node_modules/
