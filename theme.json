@@ -5,6 +5,35 @@
 		"appearanceTools": true,
 		"layout": {
 			"contentSize": "1000px"
+		},
+		"typography": {
+			"dropCap": false,
+			"fontSizes": [
+				{
+					"size": "0.8rem",
+					"slug": "small"
+				},
+				{
+					"size": "1rem",
+					"slug": "medium"
+				},
+				{
+					"size": "1.5rem",
+					"slug": "large"
+				}
+			]
+		},
+		"spacing": {
+			"blockGap": true
+		},
+		"color": {
+			"palette": [
+				{
+					"slug": "smoke",
+					"color": "#f9fafb",
+					"name": "Smoke"
+				}
+			]
 		}
 	},
 	"templateParts": [
@@ -18,5 +47,33 @@
 			"title": "Footer",
 			"area": "footer"
 		}
-	]
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var(--wp--preset--font-size--medium)"
+		},
+		"color": {
+			"background": "var(--wp--preset--color--white)",
+			"text": "var(--wp--preset--color--black)"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--black)"
+				}
+			}
+		},
+		"spacing": {
+			"blockGap": "2rem"
+		},
+		"blocks": {
+			"core/site-title": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--large)",
+					"fontStyle": "normal",
+					"fontWeight": "bold"
+				}
+			}
+		}
+	}
 }
