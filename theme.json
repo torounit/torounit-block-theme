@@ -6,8 +6,22 @@
 		"layout": {
 			"contentSize": "1000px"
 		},
+		"custom": {
+			"typography": {
+				"line-height": {
+					"normal": 1.75
+				}
+			}
+		},
 		"typography": {
 			"dropCap": false,
+			"fontFamilies": [
+				{
+					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+					"name": "System Font",
+					"slug": "system-font"
+				}
+			],
 			"fontSizes": [
 				{
 					"size": "0.8rem",
@@ -50,7 +64,9 @@
 	],
 	"styles": {
 		"typography": {
-			"fontSize": "var(--wp--preset--font-size--medium)"
+			"fontFamily": "var(--wp--preset--font-family--system-font)",
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"lineHeight": "var(--wp--custom--typography--line-height--normal)"
 		},
 		"color": {
 			"background": "var(--wp--preset--color--white)",
@@ -64,14 +80,35 @@
 			}
 		},
 		"spacing": {
-			"blockGap": "2rem"
+			"blockGap": "3rem"
 		},
 		"blocks": {
 			"core/site-title": {
+				"spacing": {
+					"blockGap": "1rem",
+					"margin": {
+						"top": "1rem",
+						"bottom": "1rem"
+					}
+				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--large)",
 					"fontStyle": "normal",
 					"fontWeight": "bold"
+				}
+			},
+			"core/page-list": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--large)",
+					"fontStyle": "normal",
+					"fontWeight": "bold"
+				},
+				"spacing": {
+					"blockGap": "1rem",
+					"margin": {
+						"top": "1rem",
+						"bottom": "1rem"
+					}
 				}
 			}
 		}

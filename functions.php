@@ -1,17 +1,21 @@
 <?php
-if ( ! function_exists( 'myfirsttheme_setup' ) ) :
-	/**
-	 * Sets up theme defaults and registers support for various WordPress features.
-	 *
-	 * Note that this function is hooked into the after_setup_theme hook, which runs
-	 * before the init hook.
-	 */
-	function myfirsttheme_setup() {
-		// Add support for block styles.
-		add_theme_support( 'wp-block-styles' );
 
-		// Enqueue editor styles.
-		add_editor_style( 'editor-style.css' );
-	}
-endif; // myfirsttheme_setup
-add_action( 'after_setup_theme', 'myfirsttheme_setup' );
+function torounit_block_theme_setup() {
+	add_theme_support( 'wp-block-styles' );
+	add_editor_style( 'editor-style.css' );
+}
+add_action( 'after_setup_theme', 'torounit_block_theme_setup' );
+
+function torounit_block_theme_styles() {
+	$theme_version = wp_get_theme()->get( 'Version' );
+	$version_string = is_string( $theme_version ) ? $theme_version : false;
+
+	wp_enqueue_style(
+		'torounit-block-theme-style',
+		get_template_directory_uri() . '/style.css',
+		array(),
+		$version_string
+	);
+}
+
+add_action( 'wp_enqueue_scripts', 'torounit_block_theme_styles' );

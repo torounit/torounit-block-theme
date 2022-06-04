@@ -11,3 +11,15 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: torounit-block-theme
 */
+
+.entry-content::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.entry-content> :where(:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull)) {
+	/* TODO: Use custom variables */
+	padding-left: 20px;
+	padding-right: 20px;
+}
