@@ -104,11 +104,12 @@
 					"fontWeight": "bold"
 				},
 				"spacing": {
-					"blockGap": "1rem",
-					"margin": {
-						"top": "1rem",
-						"bottom": "1rem"
-					}
+					"blockGap": "1rem"
+				}
+			},
+			"core/navigation": {
+				"spacing": {
+					"blockGap": "1rem"
 				}
 			}
 		}

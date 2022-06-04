@@ -20,6 +20,14 @@ Text Domain: torounit-block-theme
 
 .entry-content> :where(:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull)) {
 	/* TODO: Use custom variables */
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.wp-block-navigation {
+	--wp--style--block-gap: 1rem;
+}
+
+.wp-block-navigation .wp-block-page-list {
+	gap: var( --wp--style--block-gap, 0.5em );
 }
